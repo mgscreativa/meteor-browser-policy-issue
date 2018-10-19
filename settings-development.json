@@ -7,25 +7,6 @@
   },
   "private": {
     "debug": true,
-    "MAIL_URL": "smtps://test%40mg.mgscreativa.com:1754b12d1754pl4n3@smtp.mailgun.org:465",
-    "OAuth": {
-      "facebook": {
-        "appId": "764933690344157",
-        "secret": "caa42d2ded40ff38cbded05ac152913a",
-        "loginStyle": "popup"
-      },
-      "google": {
-        "clientId": "578038325953-jg4jnqogc16alk73bq8kgve77fqr4ps0.apps.googleusercontent.com",
-        "secret": "639wMQPLl6dQuKOBSw94-Y5U",
-        "validClientIds": [
-          "578038325953-jg4jnqogc16alk73bq8kgve77fqr4ps0.apps.googleusercontent.com",
-          "578038325953-r83ak87ehfhibcoskrh9e30fcqjgh5gh.apps.googleusercontent.com",
-          "578038325953-dddbv46fetmt59nr479i74doucjkifmu.apps.googleusercontent.com"
-        ],
-        "loginStyle": "popup",
-        "developmentMobileRedirectUri": "https://auth.expo.io/@anonymous/c8fe9b89-c01d-413f-859e-27e8c75903a9",
-        "productionMobileRedirectUri": "https://auth.expo.io/@mgscreativa/"
-      }
-    }
+    "MAIL_URL": ""
   }
 }

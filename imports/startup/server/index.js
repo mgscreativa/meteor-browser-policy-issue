@@ -2,5 +2,5 @@ import './production-redirect';
 import './email';
 import './accounts';
 import './api';
-import './browser-policy'; // Breaks HTTPS in Heroku
+// import './browser-policy'; // Breaks HTTPS in Heroku
 import './fixtures';

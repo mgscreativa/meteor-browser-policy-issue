@@ -25,17 +25,8 @@ class PublicLayout extends Component {
                   <span className="px-logo m-t-0">
                     <img alt="Logo" src="/images/logo.png" width="24" />
                   </span>
-                  Proyecto
+                  Proyect
                 </Link>
-                {!hideRegister ? (
-                  <Link to="/signup" className="btn btn-primary">
-                    Regístrese!
-                  </Link>
-                ) : (
-                  <Link to="/" className="btn btn-primary">
-                    Volver al Inicio!
-                  </Link>
-                )}
               </div>
 
               {React.createElement(component, {

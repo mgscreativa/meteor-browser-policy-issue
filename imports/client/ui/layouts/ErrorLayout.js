@@ -13,7 +13,7 @@ const ErrorLayout = ({ loggingIn, authenticated, appSettings, component, ...rest
             <span className="px-logo m-t-0">
               <img alt=" Logo" src="/images/logo.png" width="24" />
             </span>
-            Proyecto
+            Proyect
           </Link>
         </div>
 

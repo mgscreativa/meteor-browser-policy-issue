@@ -1,1 +1,1 @@
-# Servidor Proyecto Dinamo
+# Servidor Proyecto

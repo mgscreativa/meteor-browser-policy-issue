@@ -19,8 +19,8 @@ const databaseSeed = () => {
               password: 'clave',
               profile: {
                 name: {
-                  first: 'Playtime',
-                  last: 'Argentina',
+                  first: 'XXXX',
+                  last: 'YYYY',
                 },
               },
               fake: true,

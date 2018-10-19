@@ -1,5 +1,5 @@
 {
-  "name": "dinamo-server",
+  "name": "server",
   "private": true,
   "scripts": {
     "start": "meteor run --settings settings-development.json",

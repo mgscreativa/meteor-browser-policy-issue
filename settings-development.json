@@ -23,8 +23,8 @@
           "578038325953-dddbv46fetmt59nr479i74doucjkifmu.apps.googleusercontent.com"
         ],
         "loginStyle": "popup",
-        "developmentMobileRedirectUri": "https://auth.expo.io/@anonymous/proyectodinamo-c8fe9b89-c01d-413f-859e-27e8c75903a9",
-        "productionMobileRedirectUri": "https://auth.expo.io/@mgscreativa/proyectodinamo"
+        "developmentMobileRedirectUri": "https://auth.expo.io/@anonymous/c8fe9b89-c01d-413f-859e-27e8c75903a9",
+        "productionMobileRedirectUri": "https://auth.expo.io/@mgscreativa/"
       }
     }
   }

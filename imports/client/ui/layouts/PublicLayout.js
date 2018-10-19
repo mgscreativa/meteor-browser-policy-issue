@@ -38,9 +38,9 @@ class PublicLayout extends Component {
               <div className="page-signin-header p-a-2 text-sm-center bg-white">
                 <Link className="px-brand px-brand-lg text-default" to="/">
                   <span className="px-logo m-t-0">
-                    <img alt="Dinamo Logo" src="/images/logo.png" width="24" />
+                    <img alt="Logo" src="/images/logo.png" width="24" />
                   </span>
-                  Proyecto Dinamo
+                  Proyecto
                 </Link>
                 {!hideRegister ? <Link to="/signup" className="btn btn-primary">Regístrese!</Link> :
                 <Link to="/" className="btn btn-primary">Volver al Inicio!</Link>

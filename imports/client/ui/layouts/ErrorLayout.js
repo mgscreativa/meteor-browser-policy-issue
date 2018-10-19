@@ -11,9 +11,9 @@ const ErrorLayout = ({ loggingIn, authenticated, appSettings, component, ...rest
         <div className="page-404-header bg-white">
           <Link className="px-brand px-brand-lg text-default" to="/">
             <span className="px-logo m-t-0">
-              <img alt="Dinamo Logo" src="/images/logo.png" width="24" />
+              <img alt=" Logo" src="/images/logo.png" width="24" />
             </span>
-            Proyecto Dinamo
+            Proyecto
           </Link>
         </div>
 

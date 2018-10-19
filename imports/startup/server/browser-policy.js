@@ -13,8 +13,6 @@ const trusted = [
   'maps.googleapis.com',
   'maps.gstatic.com',
   'csi.gstatic.com',
-  'dinamo-server-meteor.herokuapp.com',
-  'dinamoapp.playtime.com.ar',
   'fonts.googleapis.com',
   'fonts.gstatic.com',
   'cdnjs.cloudflare.com',

@@ -1,9 +1,6 @@
 import { Meteor } from 'meteor/meteor';
-import { withTracker } from 'meteor/react-meteor-data';
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { getUserAvatar, getUserFullName } from '../../../../modules/user-utils';
 import { initializePxNavbar } from '../../../../modules/client/template-utils';
 
 class MenuTop extends Component {
@@ -16,20 +13,14 @@ class MenuTop extends Component {
   }
 
   render() {
-    const { ready, currentUser } = this.props;
-
-    if (!ready) {
-      return <div />;
-    }
-
     return (
       <nav className="navbar px-navbar" id="px-navbar-dinamo">
         <div className="navbar-header">
           <Link className="navbar-brand px-brand" to="/">
             <span className="px-logo m-t-0 bg-primary">
-              <img alt="Dinamo Logo" src="/images/logo.png" width="24" />
+              <img alt="Logo" src="/images/logo.png" width="24" />
             </span>
-            Proyecto Dinamo
+            Browser Policy
           </Link>
         </div>
 
@@ -54,21 +45,11 @@ class MenuTop extends Component {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <img
-                  src={getUserAvatar(currentUser)}
-                  alt=""
-                  className="px-navbar-image"
-                />
-                <span className="hidden-md">
-                  {getUserFullName(currentUser)}
-                </span>
+                X<span className="hidden-md">Test</span>
               </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/profile">
-                    <i className="dropdown-icon mdi mdi-account" />
-                    &nbsp;&nbsp;Ver Perfil
-                  </Link>
+
                 </li>
                 <li className="divider" />
                 <li>
@@ -88,16 +69,4 @@ class MenuTop extends Component {
   }
 }
 
-MenuTop.propTypes = {
-  ready: PropTypes.bool.isRequired,
-  currentUser: PropTypes.object.isRequired,
-};
-
-export default withTracker(() => {
-  const subscription = Meteor.subscribe('users.info');
-
-  return {
-    ready: subscription.ready(),
-    currentUser: Meteor.user(),
-  };
-})(MenuTop);
+export default MenuTop;

@@ -49,7 +49,6 @@ const routesData = [
     path: '/',
     component: IndexPage,
     title: 'Inicio',
-    // icon: 'mdi mdi-home',
     icon: 'mdi mdi-home',
   },
 

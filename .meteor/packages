@@ -31,7 +31,7 @@ ddp-rate-limiter@1.0.7
 dynamic-import@0.4.2
 
 # Extra packages
-#browser-policy #Breaks HTTPS in Heroku
+browser-policy #Breaks HTTPS in Heroku
 jquery@1.11.10
 #xolvio:cleaner
 #practicalmeteor:mocha

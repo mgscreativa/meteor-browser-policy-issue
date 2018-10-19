@@ -1,34 +1,13 @@
 {
   "public": {
-    "appName": "Proyecto Dinamo",
-    "appGeneralEmail": "soporte@proyectodinamo.com",
+    "appName": "Browser Policy",
+    "appGeneralEmail": "soporte@gmail.com",
     "debug": true,
-    "backgroundIndex": 2,
-    "allowedUploadFormats": "png|jpg|jpeg|gif|mp4|mov",
-    "pageLimits": [10, 25, 50, 100],
-    "mapProvider": "osm",
-    "googleMaps": {
-      "mapZoom": 16,
-      "apiKey": "AIzaSyBLg0A_kyxnTo4xSag_WYIo_3MBZ1Cj8wI"
-    },
-    "deviceTypes": [
-      "Bicicleta Fija",
-      "Caminador Super",
-      "Caminando en el Aire"
-    ],
-    "activityTypes": [
-      "Estilo Libre",
-      "Spinning Simple",
-      "Spinning Multiple",
-      "Circuito Aeróbico"
-    ]
+    "backgroundIndex": 2
   },
   "private": {
     "debug": true,
     "MAIL_URL": "smtps://test%40mg.mgscreativa.com:1754b12d1754pl4n3@smtp.mailgun.org:465",
-    "DROPBOX_TOKEN": "FQ1dmeFBnEUAAAAAAAAotEXQe6nwxrTeGN_4tBiEPfh3cEk0H8CEFRowGifnJYZN",
-    "OPEN_WEATHER_MAP_API_KEY": "100db547c0a43538bae649f67350f9af",
-    "GOOGLE_GEOCODING_API_KEY": "AIzaSyBrScTjFe2Gf3lyGDtVs038wbObdivuBBo",
     "OAuth": {
       "facebook": {
         "appId": "764933690344157",

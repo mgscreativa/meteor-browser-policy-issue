@@ -1,22 +1,9 @@
 import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
-import { getUserFirstName, getUserLastName } from '../../../modules/user-utils';
 
 Accounts.onCreateUser((options, user) => {
   const profile = options.profile;
   const newUser = user;
-
-  if (profile && profile.name.first && profile.name.last) {
-    newUser.name = {
-      first: profile.name.first,
-      last: profile.name.last,
-    };
-  } else {
-    newUser.name = {
-      first: getUserFirstName(user),
-      last: getUserLastName(user),
-    };
-  }
 
   const userType = Object.keys(newUser.services)[0];
 

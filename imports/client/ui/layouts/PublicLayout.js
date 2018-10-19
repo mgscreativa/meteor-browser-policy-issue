@@ -1,21 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { initializeResponsiveBg, destroyResponsiveBg } from '../../../modules/client/template-utils';
-
 class PublicLayout extends Component {
-  componentDidMount() {
-    const { hideRegister } = this.props;
-
-    if (!hideRegister) {
-      initializeResponsiveBg();
-    }
-  }
-
-  componentWillUnmount() {
-    destroyResponsiveBg();
-  }
-
   render() {
     const {
       loggingIn,
@@ -29,12 +15,11 @@ class PublicLayout extends Component {
     return (
       <Route
         {...rest}
-        render={(props) => {
+        render={props => {
           if (loggingIn) return <div />;
 
           return !authenticated ? (
             <div className="public-layout">
-
               <div className="page-signin-header p-a-2 text-sm-center bg-white">
                 <Link className="px-brand px-brand-lg text-default" to="/">
                   <span className="px-logo m-t-0">
@@ -42,15 +27,27 @@ class PublicLayout extends Component {
                   </span>
                   Proyecto
                 </Link>
-                {!hideRegister ? <Link to="/signup" className="btn btn-primary">Regístrese!</Link> :
-                <Link to="/" className="btn btn-primary">Volver al Inicio!</Link>
-                }
+                {!hideRegister ? (
+                  <Link to="/signup" className="btn btn-primary">
+                    Regístrese!
+                  </Link>
+                ) : (
+                  <Link to="/" className="btn btn-primary">
+                    Volver al Inicio!
+                  </Link>
+                )}
               </div>
 
-              {React.createElement(component, { ...props, loggingIn, authenticated, appSettings })}
-
+              {React.createElement(component, {
+                ...props,
+                loggingIn,
+                authenticated,
+                appSettings,
+              })}
             </div>
-          ) : (<Redirect to="/" />);
+          ) : (
+            <Redirect to="/" />
+          );
         }}
       />
     );

@@ -5,17 +5,8 @@ import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { ReactiveVar } from 'meteor/reactive-var';
 import OAuthLoginButton from './OAuthLoginButton/index';
-import { initializeTooltips } from '../../../../modules/client/template-utils';
 
 class OAuthLoginButtons extends Component {
-  componentDidMount() {
-    initializeTooltips();
-  }
-
-  componentDidUpdate() {
-    initializeTooltips();
-  }
-
   render() {
     const { services, message } = this.props;
 

@@ -1,17 +1,8 @@
 import { Meteor } from 'meteor/meteor';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { initializePxNavbar } from '../../../../modules/client/template-utils';
 
 class MenuTop extends Component {
-  componentDidMount() {
-    initializePxNavbar('#px-navbar-dinamo');
-  }
-
-  componentDidUpdate() {
-    initializePxNavbar('#px-navbar-dinamo');
-  }
-
   render() {
     return (
       <nav className="navbar px-navbar" id="px-navbar-dinamo">

@@ -2,26 +2,12 @@ import _ from 'lodash';
 import { Meteor } from 'meteor/meteor';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  getUserAvatar,
-  getUserFirstName,
-} from '../../../../modules/user-utils';
-import { authorizeAccess } from '../../../../modules/client/authorize-utils';
 import routesData from '../../../../modules/client/route-utils';
-import { initializePxNav } from '../../../../modules/client/template-utils';
 
 const findRouteProperty = (url, property) =>
   _.find(routesData, { path: url })[property];
 
 class MenuSidebar extends Component {
-  componentDidMount() {
-    initializePxNav('#px-nav-dinamo');
-  }
-
-  componentDidUpdate() {
-    initializePxNav('#px-nav-dinamo');
-  }
-
   render() {
     return (
       <nav className="px-nav px-nav-left" id="px-nav-dinamo">

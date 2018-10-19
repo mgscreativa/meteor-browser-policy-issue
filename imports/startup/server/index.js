@@ -1,4 +1,3 @@
-import './production-redirect';
 import './email';
 import './accounts';
 import './api';

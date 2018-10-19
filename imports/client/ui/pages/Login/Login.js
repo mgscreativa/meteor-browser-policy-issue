@@ -2,6 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import OAuthLoginButtons from '../../components/OAuthLoginButtons';
 import validate from '../../../../modules/validate';
 import alertBox from '../../../../modules/client/alert-box';
 
@@ -93,6 +94,7 @@ class Login extends Component {
 
         </form>
 
+        <OAuthLoginButtons message={'o ingrese con'} services={['facebook', 'google']} />
       </div>
     );
   }

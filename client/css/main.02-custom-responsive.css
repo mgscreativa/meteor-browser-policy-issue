@@ -1,0 +1,15 @@
+@media (max-width: 800px) {
+  .media-details {
+    flex-direction: column;
+  }
+
+  .media-details-image {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal-popup-with-content .modal-dialog {
+    margin: 10px;
+  }
+}

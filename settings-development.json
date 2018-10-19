@@ -1,0 +1,52 @@
+{
+  "public": {
+    "appName": "Proyecto Dinamo",
+    "appGeneralEmail": "soporte@proyectodinamo.com",
+    "debug": true,
+    "backgroundIndex": 2,
+    "allowedUploadFormats": "png|jpg|jpeg|gif|mp4|mov",
+    "pageLimits": [10, 25, 50, 100],
+    "mapProvider": "osm",
+    "googleMaps": {
+      "mapZoom": 16,
+      "apiKey": "AIzaSyBLg0A_kyxnTo4xSag_WYIo_3MBZ1Cj8wI"
+    },
+    "deviceTypes": [
+      "Bicicleta Fija",
+      "Caminador Super",
+      "Caminando en el Aire"
+    ],
+    "activityTypes": [
+      "Estilo Libre",
+      "Spinning Simple",
+      "Spinning Multiple",
+      "Circuito Aeróbico"
+    ]
+  },
+  "private": {
+    "debug": true,
+    "MAIL_URL": "smtps://test%40mg.mgscreativa.com:1754b12d1754pl4n3@smtp.mailgun.org:465",
+    "DROPBOX_TOKEN": "FQ1dmeFBnEUAAAAAAAAotEXQe6nwxrTeGN_4tBiEPfh3cEk0H8CEFRowGifnJYZN",
+    "OPEN_WEATHER_MAP_API_KEY": "100db547c0a43538bae649f67350f9af",
+    "GOOGLE_GEOCODING_API_KEY": "AIzaSyBrScTjFe2Gf3lyGDtVs038wbObdivuBBo",
+    "OAuth": {
+      "facebook": {
+        "appId": "764933690344157",
+        "secret": "caa42d2ded40ff38cbded05ac152913a",
+        "loginStyle": "popup"
+      },
+      "google": {
+        "clientId": "578038325953-jg4jnqogc16alk73bq8kgve77fqr4ps0.apps.googleusercontent.com",
+        "secret": "639wMQPLl6dQuKOBSw94-Y5U",
+        "validClientIds": [
+          "578038325953-jg4jnqogc16alk73bq8kgve77fqr4ps0.apps.googleusercontent.com",
+          "578038325953-r83ak87ehfhibcoskrh9e30fcqjgh5gh.apps.googleusercontent.com",
+          "578038325953-dddbv46fetmt59nr479i74doucjkifmu.apps.googleusercontent.com"
+        ],
+        "loginStyle": "popup",
+        "developmentMobileRedirectUri": "https://auth.expo.io/@anonymous/proyectodinamo-c8fe9b89-c01d-413f-859e-27e8c75903a9",
+        "productionMobileRedirectUri": "https://auth.expo.io/@mgscreativa/proyectodinamo"
+      }
+    }
+  }
+}

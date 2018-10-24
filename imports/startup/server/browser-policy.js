@@ -1,26 +1,34 @@
-import _ from 'lodash';
-import { BrowserPolicy } from 'meteor/browser-policy-common';
+import { WebApp } from 'meteor/webapp';
+import helmet from 'helmet';
 
-BrowserPolicy.framing.disallow();
-BrowserPolicy.content.disallowInlineScripts();
-BrowserPolicy.content.allowInlineStyles();
-BrowserPolicy.content.disallowEval();
-// BrowserPolicy.content.allowEval();
-// BrowserPolicy.content.allowFontDataUrl();
+WebApp.connectHandlers.use(helmet.noSniff());
+WebApp.connectHandlers.use(helmet.frameguard({ action: 'deny' }));
 
-const trusted = [
-  'localhost',
-  'maps.googleapis.com',
-  'maps.gstatic.com',
-  'csi.gstatic.com',
-  'fonts.googleapis.com',
-  'fonts.gstatic.com',
-  'cdnjs.cloudflare.com',
-  'unpkg.com',
-  'a.tile.openstreetmap.org',
-  'b.tile.openstreetmap.org',
-  'c.tile.openstreetmap.org',
-  'blob:',
-];
-
-_.map(trusted, origin => BrowserPolicy.content.allowOriginForAll(origin));
+WebApp.connectHandlers.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'", 'maps.googleapis.com'],
+      connectSrc: ['*'],
+      imgSrc: [
+        "'self'",
+        'data:',
+        'unpkg.com',
+        'a.tile.openstreetmap.org',
+        'b.tile.openstreetmap.org',
+        'c.tile.openstreetmap.org',
+        'maps.gstatic.com',
+        'maps.googleapis.com',
+      ],
+      styleSrc: [
+        "'self'",
+        "'unsafe-inline'",
+        'fonts.googleapis.com',
+        'cdnjs.cloudflare.com',
+        'unpkg.com',
+      ],
+      fontSrc: ["'self'", 'fonts.gstatic.com', 'cdnjs.cloudflare.com'],
+    },
+    browserSniff: false,
+  }),
+);
